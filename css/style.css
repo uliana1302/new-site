@@ -1,0 +1,18 @@
+/* сброс стилей */
+@import 'reset.css';
+/* стартовый экран */
+@import 'index.css';
+
+/* подключение шрифтов */
+@font-face {
+    font-family: "Gropled-Bold";
+    src: url("../fonts/Gropled-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "HelveticaRegular";
+    src: url("../fonts/HelveticaRegular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "HelveticaBold";
+    src: url("../fonts/HelveticaBold.ttf") format("truetype");
+}
