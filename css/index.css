@@ -1,18 +1,22 @@
 /* главная */
 body.main {
   width: 100vw;
-  height: 530vh;
-  background: no-repeat top/100% url('../images/fon_main.png');
+  /* background: no-repeat top/100% url('../images/fon_main.png'); */
   overflow-x: hidden;
 }
-p {
+p, li {
   font-family: "HelveticaRegular";
   font-size: 1.8vw;
   line-height: 140%;
 }
+ul {
+  list-style-type: disc;
+}
 a:hover {
   opacity: 0.7;
 }
+
+/* навигация */
 .nav {
   width: 100vw;
   height: 2.9vw;
@@ -23,6 +27,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   background-color: white;
+  z-index: 20;
 }
 .logo {
   font-family: "Gropled-Bold";
@@ -63,6 +68,7 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  z-index: 20;
 }
 .dzen {
   width: 1.6vw;
@@ -75,6 +81,244 @@ a:hover {
   height: 1.6vw;
   background: no-repeat top/100% url('../images/telegram.svg');
 }
+
+/* анимация шейпов */
+.shape {
+  width: 89vw;
+  height: 43vw;
+  top: 9.2vw;
+  left: 5vw;
+  /* opacity: 0.3; */
+  position: relative;
+  background: no-repeat top/100% url('../images/shapes/orange.svg');
+  animation: shape 8s ease-in-out infinite;
+}
+@keyframes shape {
+  0%, 32% {left: 5vw; top: 9.2vw; background: no-repeat top/100% url('../images/shapes/orange.svg');}
+  33%, 65% {left: 6vw; top: 9.2vw; background: no-repeat top/100% url('../images/shapes/green.svg');}
+  66%, 100% {left: 5vw; top: 7.2vw; background: no-repeat top/100% url('../images/shapes/blue.svg');}
+}
+.shape_logo {
+  font-family: "Gropled-Bold";
+  font-size: 12.8vw;
+  position: absolute;
+  top: 19.2vw;
+  left: 29.2vw;
+}
+.caption {
+  position: absolute;
+  top: 34.4vw;
+  left: 35.5vw;
+}
+
+/* переход в разделы */
+.sections {
+  width: 92vw;
+  height: 15.4vw;
+  margin: 16.7vw 2.5vw 0 3.8vw;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.c {
+  background-color: #D9D9D9;
+  width: 25.6vw;
+  height: 12.4vw;
+  /* opacity: 0.3; */
+  padding: 0 2vw 2vw 2vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.arrow {
+  margin-bottom: 0.7vw;
+  width: 2.7vw;
+  height: 1.2vw;
+  background: no-repeat top/100% url('../images/arrow.svg');
+}
+
+/* текст */
+.about-t {
+  position: relative;
+  margin: 11.4vw auto 0 auto;
+  width: 50.6vw;
+  height: 10.4vw;
+}
+.d-list {
+  position: relative;
+  margin: 4.7vw 3.8vw 0 auto;
+  width: 91.5vw;
+  height: 15.4vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.list {
+  width: 44.7vw;
+  height: 15.4vw;
+  border: 2px solid black;
+}
+.type-1 {
+  padding: 4vw 0 0 10vw;
+}
+.type-2 {
+  padding: 4vw 0 0 8vw;
+}
+
+/* игрушка */
+.but-drag {
+  position: relative;
+  margin: 16.9vw auto 0 auto;
+  width: 25vw;
+  height: 3.1vw;
+  padding: 2vw;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.but-drag p {
+  color: white;
+  padding: 0 0 0 2vw;
+}
+.arrow-w {
+  width: 2.7vw;
+  height: 1.2vw;
+  transform: rotate(90deg);
+  margin: 0 1vw 0 0;
+  background: no-repeat top/100% url('../images/arrow-white.svg');
+}
+.drag {
+  position: relative;
+  margin: 7vw auto 0 auto;
+  width: 86vw;
+  height: 41vw;
+  /* opacity: 0.3; */
+}
+.shape-d-1 {
+  position: absolute;
+  top: 8.4vw;
+  left: 29.2vw;
+  width: 55vw;
+  height: 27.5vw;
+  background: no-repeat top/100% url('../images/shapes/orange.svg');
+  cursor: pointer;
+}
+.shape-d-2 {
+  position: absolute;
+  top: 8vw;
+  left: 41.5vw;
+  width: 31.7vw;
+  height: 2.4vw;
+  transform: rotate(-27.56deg);
+  background-color: #D9D9D9;
+  cursor: pointer;
+}
+.shape-d-3 {
+  position: absolute;
+  top: 34vw;
+  left: 0;
+  width: 52.7vw;
+  height: 4.8vw;
+  background-color: #D9D9D9;
+  cursor: pointer;
+}
+.shape-d-4 {
+  position: absolute;
+  top: 2vw;
+  left: 0.5vw;
+  width: 60.8vw;
+  height: 26.5vw;
+  background: no-repeat top/100% url('../images/shapes/blue.svg');
+  cursor: pointer;
+}
+.shape-d-5 {
+  position: absolute;
+  top: 15.2vw;
+  left: 11vw;
+  width: 60.6vw;
+  height: 25vw;
+  transform: rotate(-1.7deg);
+  background: no-repeat top/100% url('../images/shapes/green.svg');
+  cursor: pointer;
+}
+.shape-d-6 {
+  position: absolute;
+  top: 7vw;
+  left: 79vw;
+  width: 5.8vw;
+  height: 5.8vw;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* форма */
+#form-1 {
+  font-family: "HelveticaBold";
+  font-size: 4.4vw;
+  position: relative;
+  margin: 17vw auto 0 30vw;
+}
+.form-div {
+  position: relative;
+  margin: 3vw auto 0 auto;
+  width: 40vw;
+  height: 19vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.row {
+  height: 3.7vw;
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+input {
+  border: 2px solid black;
+  height: 2vw;
+}
+.f-button input {
+  border: none;
+  margin: 1.5vw 0 0 -0.5vw;
+  width: 8.5vw;
+  height: 2.3vw;
+  background: no-repeat top/100% url('../images/button.svg');
+  font-size: 0.8vw;
+  color: white;
+}
+
+/* футер */
+.futer {
+  width: 100vw;
+  height: 9.2vw;
+  position: relative;
+  margin-top: 12vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-fut {
+  margin-top: 1.5vw;
+  font-family: "Gropled-Bold";
+  font-size: 2.9vw;
+  color: white;
+}
+.adr {
+  font-size: 0.8vw;
+  color: white;
+}
+
 
 /* программы */
 body.programm {

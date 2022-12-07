@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shape — центр детского развития</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="javascripts/main.js"></script>
   </head>
   <body class="main">
 
@@ -18,14 +21,108 @@
         <a href="test.html"><p>Тестирование</p></a>
         <a href="contacts.html"><p>Контакты</p></a>
       </div>
-      <div class="button">
+      <a href="#form-1"><div class="button">
         <p>Запись на занятие</p>
-      </div>
+      </div></a>
     </div>
     <!-- навигация соцсети -->
     <div class="social">
       <a href="https://dzen.ru" target="_blank"><div class="dzen"></div></a>
       <a href="https://telegram.org" target="_blank"><div class="telegram"></div></a>
+    </div>
+
+    <!-- анимация шейпов -->
+    <div class="shape"></div>
+    <p class="shape_logo">Shape</h1>
+    <p class="caption">центр детского развития от 1 года</p>
+
+    <!-- переход в разделы -->
+    <div class="sections">
+      <div class="chapt-prog">
+        <div class="c name-1">
+          <p>Программа</p>
+          <a href="programm.html"><div class="arrow"></div></a>
+        </div>
+      </div>
+      <div class="chapt-group">
+        <div class="c name-2">
+          <p>Группы</p>
+          <a href="group.html"><div class="arrow"></div></a>
+        </div>
+      </div>
+      <div class="chapt-test">
+        <div class="c name-3">
+          <p>Тестирование</p>
+          <a href="test.html"><div class="arrow"></div></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- текст -->
+      <p class="about-t">Наш центр детского развития предназначен для детей <br> от 1 года до 15 лет. Высококлассные специалисты <br> и авторские программы отличают нас от других центров. <br> Мы специализируемся на:</p>
+      <div class="d-list">
+        <div class="list">
+          <ul class="type-1">
+            <li>подготовка к школе</li>
+            <li>изучение иностранных языков</li>
+            <li>обучение музыке</li>
+          </ul>
+        </div>
+        <div class="list">
+          <ul class="type-2">
+            <li>развитие художественных навыков</li>
+            <li>наблюдение у психолога</li>
+            <li>общее развитие ребенка</li>
+          </ul>
+        </div>
+      </div>
+
+    <!-- игрушка -->
+    <div class="but-drag">
+      <p>Собери зверушку</p>
+      <div class="arrow-w"></div>
+    </div>
+    <div class="drag">
+      <div class="shape-d-1"></div>
+      <div class="shape-d-2"></div>
+      <div class="shape-d-3"></div>
+      <div class="shape-d-4"></div>
+      <div class="shape-d-5"></div>
+      <div class="shape-d-6"></div>
+    </div>
+
+    <!-- форма записи -->
+    <p id="form-1">Запись на занятие</p>
+    <div class="form-div">
+      <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>
+          <div class="row">
+            <p>ФИО родителя</p>
+            <input type="text" name="parent_name" value="Иванов Иван Иванович" size=56>
+          </div>
+          <div class="row">
+            <p>Возраст ребёнка</p>
+            <input type="Text" name="child_age" value="5" size=15>
+            <p>Дата</p>
+            <input type="data" name="data" value="2022-12-14" size=15>
+          </div>
+          <div class="row">
+            <p>Номер телефона</p>
+            <input type="tel" name="phone_number" value="+79935672185" size=56>
+          </div>
+          <div class="row">
+            <p>E-mail</p>
+            <input type="email" name="email" value="23@ya.ru" size=56>
+          </div>
+          <div class="f-button">
+            <input type="submit" name="submit" value="Записаться">
+          </div>
+      </form>
+    </div>
+
+    <!-- футер -->
+    <div class="futer">
+      <p class="logo-fut">Shape</p>
+      <p class="adr">г. Москва, ул. Большая Филёвская, д. 6</p>
     </div>
 
   </body>
