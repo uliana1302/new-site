@@ -24,7 +24,7 @@
     </div>
     <!-- навигация соцсети -->
     <div class="social">
-      <a href="https://dzen.ru" target="_blank"><div class="dzen"></div></a>
+      <a href="https://dzen.ru" target="_self"><div class="dzen"></div></a>
       <a href="https://telegram.org" target="_blank"><div class="telegram"></div></a>
     </div>
 
@@ -34,11 +34,39 @@
       <p class="zag-shape-test">Тестирование</p>
     </div>
 
+    <p class="vhod-3">Перед посещением первого занятия в нашем центре <br> мы предлагаем пройти небольшое тестирование для <br> определения умственных способностей.</p>
+    <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>
+      <div class="test-js">
+        <div class="sam-test">
+          <input type=hidden name="task" value="Число А больше или меньше числа Б?"><p class="tz">Число А больше или меньше числа Б? Введите ответ.</p>
+          <div class="chisla">
+            <div class="row-1">
+              <p>Число А</p>
+              <input id="a" type="Number" name="chislo A" value="5" size=18>
+              <p>Число Б</p>
+              <input id="b" type="Number" name="chislo Б" value="7" size=18>
+            </div>
+            <div class="row-2">
+              <p>Ответ</p>
+              <input id="c" type="Text" name="answer" size=20>
+            </div>
+          </div>
+          <div class="test-but">
+            <input type="submit" name="submit" value="Отправить">
+          </div>
+        <div class="results">
+          <input id="res-out" type=hidden name="results" value="Ваш ответ"><p id="results-v">Результаты: Ваш ответ</p>
+        </div>
+      </div>
+    </form>
+
     <!-- футер -->
-    <!-- <div class="futer">
+    <div class="futer-test">
       <p class="logo-fut">Shape</p>
       <p class="adr">г. Москва, ул. Большая Филёвская, д. 6</p>
-    </div> -->
+    </div>
+
+    <script src="javascripts/main.js"></script>
 
   </body>
 </html>

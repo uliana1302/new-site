@@ -468,14 +468,80 @@ a .group {
   top: 9.4vw;
   left: 42vw;
 }
-
+.vhod-2 {
+  position: absolute;
+  margin: 39.5vw auto 0 27vw;
+  width: 50.6vw;
+  height: 10.4vw;
+}
+table {
+  width: 91.5vw;
+  height: 79vw;
+  position: absolute;
+  top: 59.5vw;
+  left: 4.3vw;
+  text-decoration: none;
+  border: none;
+}
+tr {
+  width: 91.5vw;
+  height: 21.1vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 8vw;
+}
+tr:nth-child(1) { margin-top: 0; }
+tr td:nth-child(1) {
+  background-color: #D9D9D9;
+  width: 29.7vw;
+  height: 15.5vw;
+}
+tr td:nth-child(1) p {
+  padding-top: 8.8vw;
+}
+tr td:nth-child(2), td:nth-child(3) {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+tr p {
+  padding: 11vw 0 0 2vw;
+}
+.verh {
+  width: 29.6vw;
+  height: 15.3vw;
+  border: 2px solid black;
+}
+.t-button input {
+  border: none;
+  margin-top: 2vw;
+  width: 11vw;
+  height: 4.2vw;
+  background: no-repeat top/100% url('../images/button.svg');
+  font-size: 1.25vw;
+  color: white;
+  padding: 0 0 1.4vw 0;
+}
+.futer-gr {
+  width: 100vw;
+  height: 9.2vw;
+  position: absolute;
+  top: 153vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 
 /* тестирование */
 body.test {
   width: 100vw;
-  height: 230vh;
   /* background: no-repeat top/100% url('../images/fon_test.png'); */
   overflow-x: hidden;
 }
@@ -497,6 +563,104 @@ a .test {
   top: 9.4vw;
   left: 34.6vw;
 }
+.vhod-3 {
+  position: absolute;
+  margin: 39.5vw auto 0 27.5vw;
+  width: 50.6vw;
+  height: 10.4vw;
+}
+.test-js {
+  width: 91.5vw;
+  height: 30.6vw;
+  top: 59.2vw;
+  left: 3.8vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.test-js input {
+  background-color: #D9D9D9;
+}
+.sam-test {
+  width: 91.5vw;
+  height: 30.6vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.sam-test input:nth-child(1), .results input:last-child {
+  height: 3.5vw;
+}
+.tz {
+  margin: 1.3vw 0 -6.5vw 20vw;
+}
+.chisla {
+  margin-top: 7.2vw;
+  height: 9.8vw;
+  width: 50.7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.row-1 {
+  margin-left: 20vw;
+  height: 3.7vw;
+  width: 50.7vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.row-1 p, .row-2 p {
+  width: 7.2vw;
+}
+.row-1 input, .row-2 input {
+  height: 3.2vw;
+}
+.row-2 {
+  margin-left: 20vw;
+  height: 3.7vw;
+  width: 22.5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.test-but input {
+  border: none;
+  margin-left: 20vw;
+  width: 11vw;
+  height: 4.2vw;
+  background: no-repeat top/100% url('../images/button.svg');
+  font-size: 1.25vw;
+  color: white;
+  padding: 0.5vw 0 1.4vw 0;
+}
+.results {
+  width: 50.7vw;
+  height: 2.6vw;
+  margin: 2vw 0 -6.5vw 20vw;
+}
+.futer-test {
+  width: 100vw;
+  height: 9.2vw;
+  position: absolute;
+  top: 47vw;
+  left: -3.8vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 
 
