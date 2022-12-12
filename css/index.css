@@ -88,7 +88,6 @@ a:hover {
   height: 43vw;
   top: 9.2vw;
   left: 5vw;
-  /* opacity: 0.3; */
   position: relative;
   background: no-repeat top/100% url('../images/shapes/orange.svg');
   animation: shape 8s ease-in-out infinite;
@@ -126,7 +125,6 @@ a:hover {
   background-color: #D9D9D9;
   width: 25.6vw;
   height: 12.4vw;
-  /* opacity: 0.3; */
   padding: 0 2vw 2vw 2vw;
   display: flex;
   flex-direction: row;
@@ -198,7 +196,6 @@ a:hover {
   margin: 7vw auto 0 auto;
   width: 86vw;
   height: 41vw;
-  /* opacity: 0.3; */
 }
 .shape-d-1 {
   position: absolute;
@@ -296,6 +293,9 @@ input {
   background: no-repeat top/100% url('../images/button.svg');
   font-size: 0.8vw;
   color: white;
+}
+.f-button:hover, .t-button:hover, .test-but:hover, .chapt-prog:hover, .chapt-group:hover, .chapt-test:hover {
+  opacity: 0.7;
 }
 
 /* футер */
