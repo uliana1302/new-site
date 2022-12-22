@@ -1,3 +1,25 @@
+body.anim {
+  background-color: #F6D81F;
+  width: 100vw;
+  height: 100vw;
+}
+.animat {
+  position: relative;
+  margin: auto;
+  width: 30.6vw;
+  height: 37vw;
+  background: no-repeat top/100% url('../images/anim-1.png');
+  animation: animat 5s ease-out infinite;
+}
+@keyframes animat {
+  0%, 13% {background: no-repeat top/100% url('../images/anim-1.png');}
+  14%, 27% {background: no-repeat top/100% url('../images/anim-2.png');}
+  28%, 41% {background: no-repeat top/100% url('../images/anim-3.png');}
+  42%, 55% {background: no-repeat top/100% url('../images/anim-4.png');}
+  56%, 70% {background: no-repeat top/100% url('../images/anim-5.png');}
+  71%, 100% {background: no-repeat top/100% url('../images/anim-6.png');}
+}
+
 /* главная */
 body.main {
   width: 100vw;
@@ -20,13 +42,13 @@ a:hover {
 .nav {
   width: 100vw;
   height: 2.9vw;
+  background-color: white;
   padding: 1.5vw 2.5vw 1vw 3.8vw;
   position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
   z-index: 20;
 }
 .logo {
